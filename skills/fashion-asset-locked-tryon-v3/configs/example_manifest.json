@@ -1,0 +1,48 @@
+{
+  "version": "3.0.0",
+  "model": "fashn-AI/fashn-vton-1.5",
+  "stage": "dress-only-baseline",
+  "person": {
+    "image": "inputs/person.png",
+    "identity_locked": true,
+    "body": "natural mildly plus-size adult"
+  },
+  "garments": [
+    {
+      "id": "dress",
+      "image": "inputs/dress.png",
+      "category": "one-pieces",
+      "must_preserve": [
+        "chocolate-brown base",
+        "tiny irregular white floral",
+        "muted blue-grey sprigs",
+        "thin straps",
+        "shallow V neckline",
+        "long draping skirt"
+      ]
+    },
+    {
+      "id": "inner_top",
+      "image": "inputs/top.png",
+      "category": "tops",
+      "stage": "experimental-second-pass",
+      "must_preserve": [
+        "fine rib knit",
+        "mottled beige",
+        "lettuce edge collar and cuffs"
+      ]
+    }
+  ],
+  "accessories": {
+    "status": "deferred"
+  },
+  "output": {
+    "target": "2160x3840",
+    "format": "PNG",
+    "upscale_must_be_disclosed": true
+  },
+  "qa": {
+    "minimum_each_applicable": 4,
+    "scale": 5
+  }
+}
